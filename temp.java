@@ -26,9 +26,9 @@ abstract class searchFlight{
     }
 }
 
-class showDetails extends searchFlight {
+class showFlight extends searchFlight {
 
-    showDetails(String sFromI, String sDestinationI, String sDepDateI) {
+    showFlight(String sFromI, String sDestinationI, String sDepDateI) {
         super(sFromI, sDestinationI, sDepDateI);
     }
 
@@ -64,7 +64,7 @@ class showDetails extends searchFlight {
 
 public class temp {
     public static void main(String[] args) {
-        showDetails sd = new showDetails("indore", "bhopal", "05/10/2023");
+        showFlight sd = new showFlight("indore", "bhopal", "05/10/2023");
         sd.show();
     }
 }

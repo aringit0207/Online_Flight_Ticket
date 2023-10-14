@@ -1,8 +1,8 @@
 package OOPS.flightBooking;
 
-abstract public class showDetails extends searchFlight {
+abstract public class showFlight extends searchFlight {
 
-    showDetails(String sFromI, String sDestinationI, String sDepDateI) {
+    showFlight(String sFromI, String sDestinationI, String sDepDateI) {
         super(sFromI, sDestinationI, sDepDateI);
     }
 
