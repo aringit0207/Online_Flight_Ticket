@@ -1,6 +1,6 @@
 package OOPS.flightBooking;
-import java.io.File; // For creating a file
-import java.io.FileWriter; // For writing in a file
+// import java.io.File; // For creating a file
+// import java.io.FileWriter; // For writing in a file
 import java.io.FileReader; // For reading in a file
 import java.io.IOException; // For error handling
 
