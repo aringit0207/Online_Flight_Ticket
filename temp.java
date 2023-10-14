@@ -1,5 +1,6 @@
 import java.time.DayOfWeek;
 import java.time.LocalDate;
+import java.util.Scanner;
 
 abstract class searchFlight{
 
@@ -26,7 +27,7 @@ abstract class searchFlight{
     }
 }
 
-class showFlight extends searchFlight {
+abstract class showFlight extends searchFlight {
 
     showFlight(String sFromI, String sDestinationI, String sDepDateI) {
         super(sFromI, sDestinationI, sDepDateI);
@@ -62,9 +63,48 @@ class showFlight extends searchFlight {
     }
 }
 
+class selectFlight extends showFlight {
+    int num;
+    selectFlight(String sFromI, String sDestinationI, String sDepDateI) {
+        super(sFromI, sDestinationI, sDepDateI);
+    }
+
+    void select() {
+        switch (num) {
+            case 1:
+                System.out.println("1.\tAir India\t06:15\t\t12:30\t\t06:15");
+                break;
+            case 2:
+                System.out.println("2.\tIndigo\t\t12:30\t\t06:00\t\t05:30");
+                break;
+            case 3:
+                System.out.println("3.\tSpiceJet\t16:45\t\t23:15\t\t06:30");
+                break;
+            case 4:
+                System.out.println("4.\tVistara\t\t20:00\t\t3:00\t\t7:00");
+                break;
+            case 5:
+                System.out.println("1.\tAir India\t06:15\t\t12:30\t\t06:15");
+                break;
+            case 6:
+                System.out.println("2.\tIndigo\t\t12:30\t\t06:00\t\t05:30");
+                break;
+            case 7:
+                System.out.println("3.\tSpiceJet\t16:45\t\t23:15\t\t06:30");
+                break;
+            default:
+                System.out.println("You can't travel !!!");
+        }
+    }
+}
+
 public class temp {
     public static void main(String[] args) {
-        showFlight sd = new showFlight("indore", "bhopal", "05/10/2023");
-        sd.show();
+
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+
+        selectFlight sf = new selectFlight("indore", "bhopal", "05/10/2023");
+        
     }
 }
