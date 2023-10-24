@@ -1,8 +1,8 @@
-Name :		arin
-Gender :	dskl
-DOB :		23sd
-Address :	asdf
-Email Id :	dsf
-Nationality :	ds
-Age :		32
-Ph. No. :	3224
+Name :		Arin Jain
+Gender :	Male
+DOB :		02/07/2004
+Address :	Ambah, Morena, MP
+Email Id :	arinjain1610@gmail.com
+Nationality :	Indian
+Age :		20
+Ph. No. :	8516072060

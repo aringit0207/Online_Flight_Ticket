@@ -1,13 +1,17 @@
 package flightBooking;
 
+// An abstract class "selectFlight"
 abstract public class selectFlight extends showFlight {
     int Sflight, Sclass, Spassengers;
-    String flightName, dTime, aTime, duration, Fclass, fare;
+    String flightName, dTime, aTime, duration, Fclass;
+    int fare;
 
+    // constructor
     selectFlight(String sFromI, String sDestinationI, String sDepDateI) {
         super(sFromI, sDestinationI, sDepDateI);
     }
 
+    // method to select flight
     void selectF(int Sflight) {
         this.Sflight = Sflight;
 
@@ -57,7 +61,7 @@ abstract public class selectFlight extends showFlight {
                 duration = "02:40";
                 break;
             case 7:
-                System.out.println("Indigo\t22:00\t\t23:55\t\t01:55");
+                System.out.println("Indigo\t\t22:00\t\t23:55\t\t01:55");
                 flightName = "Indigo";
                 dTime = "22:00";
                 aTime = "23:55";
@@ -89,6 +93,7 @@ abstract public class selectFlight extends showFlight {
         }
     }
 
+    // method to select travelling class
     void selectC(int Sclass) {
         this.Sclass = Sclass;
 
@@ -96,17 +101,17 @@ abstract public class selectFlight extends showFlight {
             case 1:
                 System.out.println("You have selected Economy class.");
                 Fclass = "Economy";
-                fare = "7000 Rs.";
+                fare = 7000;
                 break;
             case 2:
-            System.out.println("You have selected Business class.");
-            Fclass = "Business";
-            fare = "12000 Rs.";
-            break;
+                System.out.println("You have selected Business class.");
+                Fclass = "Business";
+                fare = 12000;
+                break;
             case 3:
                 System.out.println("You have selected First class.");
-            Fclass = "First";
-            fare = "18000 Rs.";
+                Fclass = "First";
+                fare = 18000;
                 break;
             default:
                 System.out.println("Invalid Selection !!!");
@@ -114,6 +119,7 @@ abstract public class selectFlight extends showFlight {
         }
     }
 
+    // method to select no. of passengers
     void selectP(int Spassengers) {
         this.Spassengers = Spassengers;
     }
