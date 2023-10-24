@@ -61,7 +61,8 @@ abstract class showFlight extends searchFlight {
 
 abstract class selectFlight extends showFlight {
     int Sflight, Sclass, Spassengers;
-    String flightName, dTime, aTime, duration, Fclass, fare;
+    String flightName, dTime, aTime, duration, Fclass;
+    int fare;
 
     selectFlight(String sFromI, String sDestinationI, String sDepDateI) {
         super(sFromI, sDestinationI, sDepDateI);
@@ -155,17 +156,17 @@ abstract class selectFlight extends showFlight {
             case 1:
                 System.out.println("You have selected Economy class.");
                 Fclass = "Economy";
-                fare = "7000 Rs.";
+                fare = 7000;
                 break;
             case 2:
             System.out.println("You have selected Business class.");
             Fclass = "Business";
-            fare = "12000 Rs.";
+            fare = 12000;
             break;
             case 3:
                 System.out.println("You have selected First class.");
             Fclass = "First";
-            fare = "18000 Rs.";
+            fare = 18000;
                 break;
             default:
                 System.out.println("Invalid Selection !!!");
@@ -264,7 +265,7 @@ class userBill extends userDetails {
             System.out.println("\nFlight Details :-");
             System.out.println("Name : " + flightName);
             System.out.println("Departure : " + dTime + "\tArrival : " + aTime + "\t\tDuration : " + duration);
-            System.out.println("Passenger : " + Spassengers + "\t\tClass : " + Fclass + "     \tFare : " + fare);
+            System.out.println("Passenger : " + Spassengers + "\t\tClass : " + Fclass + "     \tFare : " + (Spassengers * fare) + " Rs.");
         } 
         
         catch (Exception e) {
