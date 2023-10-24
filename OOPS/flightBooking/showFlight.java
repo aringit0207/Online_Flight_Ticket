@@ -1,4 +1,4 @@
-package OOPS.flightBooking;
+package flightBooking;
 // import java.io.File; // For creating a file
 // import java.io.FileWriter; // For writing in a file
 import java.io.FileReader; // For reading in a file
@@ -10,7 +10,7 @@ abstract public class showFlight extends searchFlight {
         super(sFromI, sDestinationI, sDepDateI);
     }
 
-    void show(){
+    void show() {
         try{
             char[] flight  = new char[1000];
             FileReader input = new FileReader("flightDetails.txt");

@@ -1,4 +1,4 @@
-package OOPS.flightBooking;
+package flightBooking;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
