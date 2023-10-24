@@ -1,8 +1,8 @@
-Name :		Akash Bohre
-Gender :	male
-DOB :		14/02/2003
-Address :	subhash puram colony, tikamgarh
-Email Id :	bohreakash@gmail.com
-Nationality :	usa
-Age :		20
-Ph. No. :	6265316328
+Name :		arin
+Gender :	dskl
+DOB :		23sd
+Address :	asdf
+Email Id :	dsf
+Nationality :	ds
+Age :		32
+Ph. No. :	3224
